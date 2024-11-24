@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدينة الورد</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+ <!-- bootstrap core css -->
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+ <!-- fonts style -->
+ <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+ <!-- font awesome style -->
+ <link href="css/font-awesome.min.css" rel="stylesheet" />
+ <!-- Custom styles for this template -->
+ <link href="css/style.css" rel="stylesheet" />
+ <!-- responsive style -->
+ <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #dee2e6;
+      padding-top: 80px;
+    }
+.section {
+  flex: 1;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* إضافة خاصية الانتقال */
+}
+
+.section:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.7);
+  background-color: #ec93ee; /* اللون الوردي عند تمرير الماوس */
+  color: black;
+}
+
+.section h2, .section p {
+  transition: color 0.3s; /* خاصية انتقال اللون */
+}
+
+.section:hover h2, .section:hover p {
+  color: black; /* تغيير لون النصوص إلى اللون الوردي الفاتح */
+}
+
+    .header_section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ec93ee;
+      z-index: 1000;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-container {
+        margin-top:40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      flex: 1;
+      max-width: 300px;
+     /* background: linear-gradient(145deg, #ffffff, #f0f0f0);*/
+     background-color: white;
+      border-radius: 20px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .section:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.7);
+    }
+
+    .section img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .section h2 {
+      color: #ec93ee;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 0.9rem;
+      color: #333;
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header_section">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/01.png" alt="مدينة الورد" style="max-width: 150px; height: 70px;">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link nav-link1" href="UsesofTaifrose.html">رحلة الورد الطائفي</a></li>
+            <li class="nav-item"><a class="nav-link nav-link2" href="Uses.html">استخدامات الورد الطائفي</a></li>
+            <li class="nav-item"><a class="nav-link nav-link3" href="HistoryTaif.html">تاريخ الطائف</a></li>
+            <li class="nav-item"><a class="nav-link nav-link4" href="Culturalsignificance.html">الأهمية الثقافية</a></li>
+            <li class="nav-item"><a class="nav-link nav-link5" href="Festivalsevents.html">مهرجانات موسم الورد الطائفي</a></li>
+            <li class="nav-item"><a class="nav-link nav-link6" href="Arabicpoetry.html">الورد الطائفي في الشعر</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sections -->
+  <div class="section-container">
+    <div class="section">
+      <h2>زراعة الورد الطائفي</h2>
+      <img src="img/0101.jpeg" alt="زراعة الورد الطائفي">
+      <p>   <span class="highlight">   </span> يُنتج في الطائف سنوياً أكثر من 300 مليون وردة طائفية من حوالي 910 مزرعة تمتد على مساحة 80 هكتارًا، موزعة في قرى ومتنزهات كالهدا والشفا. تستغرق عملية الإنتاج أكثر من 70 يومًا وتشمل مراحل معقدة لاستخراج زيت الورد، بدءاً من قطف الورود عند الفجر وحتى شروق الشمس بمعدل ألف وردة يومياً.</p>
+    </div>
+    <div class="section">
+      <h2>عوامل زراعة الورد الطائفي</h2>
+      <img src="img/001.jpeg" alt="قطف الورد الطائفي">
+      <p>تتأثر زراعة الورد الطائفي بالمناخ الجبلي، التربة الخصبة، وتوفر الماء. تُستخدم هذه الزراعة في العطور ومنتجات العناية، حيث يُصدّر 25% ويُستهلك الباقي محلياً. يُعتبر موسم القطف مناسبة اجتماعية تُجرى صباحاً للحفاظ على الجودة. يمكن إكثاره بالبذور أو تقسيم النباتات، وتُزرع القصاصات بعد معالجتها لتكون جاهزة خلال عام.</p>
+    </div>
+    <div class="section">
+      <h2> قطف الورد الطائفي</h2>
+      <img src="img/222.jpeg" alt="تقطير الورد الطائفي">
+      <p>يبدأ قطف الورد الطائفي في مارس بثلاث مراحل: القطف قبل شروق الشمس، الوزن لتحديد الحصاد اليومي، والتقطير. يُقطف الورد يدويًا من الساعة الرابعة صباحًا حتى اكتمال الحصاد، بمعدل 2-3 كجم في الساعة. خلال ذروة الموسم، يتضاعف الإنتاج، وتُنقل الزهور في أكياس قطنية أو بوليثين إلى سلال خشبية جيدة التهوية. تُعد هذه العملية مصدر دخل مهم للقرويين المحليين الذين يشاركون في الحصاد.
+
+      </p>
+    </div>
+    <div class="section">
+        <h2> تقطير الورد الطائفي  </h2>
+        <img src="img/001.jpeg" alt="قطف الورد الطائفي">
+        <p>تمر عملية تقطير الورد الطائفي بخطوات دقيقة تبدأ باستلام الورد ووضعه في قدور نحاسية تُسرّع التسخين وتُحسّن الاستخلاص. يبقى الورد في القدور من 10 إلى 12 ساعة، حيث يتحول البخار الناتج عبر أنابيب إلى قطرات مكثفة داخل برادات. يستخلص ماء الورد بثلاثة أنواع: العادي، والخالص للعطور، والأكثر عطراً، باستخدام المياه النقية وبتلات الورد لإنتاج ماء مركز يُعرف بـ"الماء المروز".</p>
+      </div>
+
+  </div>
+<!-- الفيديو التوضيحي -->
+<div class="video-section" style="margin-top: 40px; text-align: center;">
+  <h3 style="color: #ec93ee; margin-bottom: 20px;">فيديو توضيحي</h3>
+  <iframe 
+      width="80%" 
+      height="450" 
+      src="https://www.youtube.com/embed/KsnUp64i8eY" 
+      title="فيديو توضيحي" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+  </iframe>
+</div>
+
+
+  <footer style="background-color: #ec93ee; color: white; padding: 20px 0; margin-top: 20px;">
+    <div class="container">
+      <div class="row text-center">
+        <!-- القسم الأول -->
+        <div class="col-md-4">
+          <h4> المصادر</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="https://www.spa.gov.sa/N2043908" style="color: white; text-decoration: none;">وكاله الانباء السعودية</a></li>
+            <li><a href="https://ar.wikipedia.org/wiki/" style="color: white; text-decoration: none;"> ويكيبيديا</a></li>
+            <li><a href="https://www.plantsrescue.com/posts/rosa-damascena" style="color: white; text-decoration: none;">الوردة الدمشقي</a></li>
+          </ul>
+        </div>
+        <!-- القسم الثاني -->
+        <div class="col-md-4">
+          <h4>تواصل معنا</h4>
+          <p>مدينة الطائف، المملكة العربية السعودية</p>
+          <p><i class="fa fa-phone"></i> +000-000-00-00</p>
+        </div>
+        <!-- القسم الثالث -->
+        <div class="col-md-4">
+          <h4>تابعنا</h4>
+          <div style="font-size: 1.5em;">
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fa fa-facebook"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fa fa-twitter"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fa fa-instagram"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 20px; font-size: 0.9em;">
+        <p>جميع الحقوق محفوظة &copy; 2024 مدينة الورد</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
